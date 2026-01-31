@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-cinema-900 text-white font-sans;
+}
+
+.seat-available {
+  @apply bg-gray-600 hover:bg-gray-500 cursor-pointer;
+}
+
+.seat-selected {
+  @apply bg-cinema-accent animate-pulse cursor-pointer;
+}
+
+.seat-occupied {
+  @apply bg-cinema-800 cursor-not-allowed opacity-50;
+}
